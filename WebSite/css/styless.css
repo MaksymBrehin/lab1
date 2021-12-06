@@ -1,0 +1,169 @@
+/* body { 
+    background: rgb(44, 43, 43); 
+   
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    /* padding: 10px;; */
+    /* margin: 0;
+    padding:0;
+} */ 
+
+/* .English  {
+
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(138, 40, 40, 0.5); /* Параметры тени */
+/*     
+    background: black;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid green;
+} */
+/* .Ukrain {
+
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(138, 40, 40, 0.5); /* Параметры тени */
+    
+    /* background: black;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid red;
+}  */
+
+body {
+    font-family: Arial;
+    color: white;
+    background: rgb(44, 43, 43); 
+    /* padding: 10px; */
+  }
+
+  
+  .split {
+    height: 100%;
+    width: 50%;
+   position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+ 
+  }
+  
+  .left {
+    left: 0;
+    background-color: #111;
+    animation: opacity 1.5s infinite 200ms
+    
+  }
+  
+  .right {
+    right: 0;
+    background-color: rgba(138, 40, 40, 0.5);
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .languageEN{
+    text-decoration: none;
+    color: rgba(138, 40, 40, 0.5);
+  }
+  
+  
+  .centered img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(138, 40, 40, 0.5);
+
+   
+  }   
+#ukrainphoto{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)
+}
+
+    
+  .ukrain{
+    
+    color:black !important;
+    text-decoration: none;
+   
+
+}
+.english{
+    color:rgba(138, 40, 40, 0.5) ;  
+    text-decoration: none;
+    
+}
+/* a:hover{
+    color: rgba(138, 40, 40, 0.5);
+} */
+
+
+#enlishnphoto   {
+  /* animation: moveToLeft 1s linear infinite; */
+  /* animation-direction: alternate-reverse; */
+  animation: left-to-right 2s ease-in forwards 1 alternate;
+  
+}
+@keyframes left-to-right{
+50%{
+  transform:translateX(100%);
+}
+0%{
+  transform:translateX(-700px);
+}
+}
+
+#ukrainphoto  {
+  animation: right-to-left 2s ease-in forwards 1 alternate; 
+}
+@keyframes right-to-left{
+0%{
+  transform:translateX(700px);
+}
+50%{
+  transform:translateX(100%);
+}
+}
+
+@media screen and (max-width:1000px)
+{
+  .left{
+    background-color:black;
+    padding:0;
+    margin: 0;
+   
+      width: 100%;
+      height: 100%;
+  }
+ .right{
+background-color: rgba(138, 40, 40, 0.5);
+     width: 100%;
+     height: 50%;
+   
+     padding: 0;
+     margin: 0;
+     
+ }
+ #ukrainphoto{
+  
+ width: 150px;
+
+  
+} 
+
+  #enlishnphoto{
+   margin-top: 150%;
+  width: 150px;
+
+   
+ } 
+}
